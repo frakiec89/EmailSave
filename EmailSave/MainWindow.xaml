@@ -8,10 +8,12 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <StackPanel>
+            <Label Content="Введите Email"/>
             <TextBox x:Name="tbMail" Margin="5"/>
-            <DataGrid Margin="5" Padding="5" MinHeight="200" x:Name="dgEmail"></DataGrid>
+           
             <Button Margin="5" x:Name="btAdd"  Content="Добавить" Click="btAdd_Click"/>
             <Button Margin="5" x:Name="btClear"  Content="Очистить" Click="btClear_Click"/>
+            <DataGrid Margin="5" Padding="5" MinHeight="200" x:Name="dgEmail"></DataGrid>
         </StackPanel>
     </Grid>
 </Window>
