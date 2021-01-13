@@ -12,10 +12,18 @@ namespace EmailSave
             get; set;
         }
 
-        public EMail(string eMail)
+        public string Name
+        {
+            get; set;
+        }
+
+        public EMail(string eMail , string name )
         {
             if (IsValidEmail(eMail))
+            {
                 this.Email = eMail;
+                this.Name = name;
+            }
             else
                 throw new Exception();
         }

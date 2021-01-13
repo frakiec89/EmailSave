@@ -50,9 +50,9 @@ namespace EmailSave
             catch { }
         }
 
-        public void Add(string em)
+        public void Add(string em , string name)
         {
-            var newEmail = new EMail(em);
+            var newEmail = new EMail(em , name);
             if (newEmail != null)
             {
                 EMails.Add(newEmail);

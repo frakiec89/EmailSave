@@ -33,13 +33,11 @@ namespace EmailSave
             eMail = new EMailList();
            dgEmail.ItemsSource = eMail.EMails;
         }
-
-
         private void btAdd_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                eMail.Add(tbMail.Text);
+                eMail.Add(tbMail.Text , tbName.Text);
                 Start();
             }
             catch
